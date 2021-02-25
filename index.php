@@ -9,13 +9,14 @@ try {
     /**
      * Créez ici votre objet de connection PDO, et utilisez à chaque fois le même objet $pdo ici.
      */
-    $pdo = new P...;
+    $pdo = new PDO("mysql:host=localhost;dbname=table_test_php;charset=utf8", root , '');
 
     /**
      * 1. Insérez un nouvel utilisateur dans la table utilisateur.
      */
 
     // TODO votre code ici.
+    $userRequest = "INSERT INTO table_test-php.user (email, username, password) VALUES ('test@example.com', 'moi', 'azer')";
 
 
     /**
@@ -23,6 +24,7 @@ try {
      */
 
     // TODO votre code ici.
+    $articleRequest = "INSERT INTOtable_text_phpe.article (titre, contenu) VALUES ('untitre', 'un contenue')";
 
     /**
      * 3. En une seule requête, ajoutez deux nouveaux utilisateurs à la table utilisateur.
